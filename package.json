@@ -27,5 +27,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.4",
     "mongoose-schema-jsonschema": "^1.4.7"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.3.2"
   }
 }
