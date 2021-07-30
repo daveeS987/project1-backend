@@ -10,4 +10,10 @@ mongoose.connect(process.env.MONGODB_URI, {
   useFindAndModify: false,
 });
 
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+  console.log('Mongo Succesfully Connected');
+});
+
 server.start(process.env.PORT);
