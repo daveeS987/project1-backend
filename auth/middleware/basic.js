@@ -13,7 +13,10 @@ module.exports = async (req, res, next) => {
     const userRecord = await User.validateBasic(username, password);
 
     req.user = userRecord;
+    console.log('🚀 ~ req.user', req.user);
     req.token = userRecord.generateToken();
+    console.log('🚀 ~ req.token', req.token);
+
     next();
   } catch (error) {
     console.log('Error happened in basic auth: ', error);

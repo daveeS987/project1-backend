@@ -12,7 +12,7 @@ router.post('/signup', handleSignUp);
 router.post('/signin', basicAuth, handleSignIn);
 
 // ------------ Examples and Test Routes -------------- //
-router.post('/allUsers', bearerAuth, getAllusers);
+router.get('/allUsers', bearerAuth, getAllusers);
 router.get('/article', bearerAuth, permission('update'), userCanUpdate);
 // ---------------------------------------------------- //
 
@@ -65,7 +65,7 @@ async function getAllusers(req, res, next) {
 }
 // ------------ Examples and Test Routes -------------- //
 function userCanUpdate(req, res, next) {
-  res.status(200).send('You can update it');
+  res.status(200).json({ message: 'You can update it' });
 }
 
 module.exports = router;

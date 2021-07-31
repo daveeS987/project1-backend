@@ -51,7 +51,7 @@ user.statics.validateBasic = async function (userName, password) {
 
 user.statics.authenticateWithToken = function (token) {
   const parsedToken = jwt.verify(token, process.env.SECRET);
-  const user = this.findOne({ userName: parsedToken.username });
+  const user = this.findOne({ username: parsedToken.username });
   return user;
 };
 
