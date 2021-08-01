@@ -4,7 +4,7 @@
 
 ## Links and Resources
 
-- [Back End Url](https://offerup-clone.herokuapp.com/)
+<!-- https://offerup-clone.herokuapp.com/ -->
 
 ## Overview
 
