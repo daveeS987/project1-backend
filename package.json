@@ -29,7 +29,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.4",
     "mongoose-schema-jsonschema": "^1.4.7",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
